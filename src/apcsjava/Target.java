@@ -1,17 +1,21 @@
 package apcsjava;
 
 public class Target {
-    private boolean isHit;
+    private int hitCount;
 
-    public Target(){
-        isHit = false;
+    public Target() {
+        hitCount = 0;
     }
 
-    public boolean isHit() {
-        return isHit;
+    public int getHitCount() {
+        return hitCount;
     }
 
-    public void setHit(boolean hit) {
-        isHit = hit;
+    public void setHitCount(int hitCount) {
+        this.hitCount = hitCount;
+    }
+
+    public void hitCountPlusOne(){
+       hitCount++;
     }
 }
